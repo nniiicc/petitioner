@@ -1,0 +1,88 @@
+[project]
+name = "petitioner"
+version = "0.1.0"
+description = "Authentication-free collection of Change.org petitions and complete comment sets"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Nic Weber", email = "nmweber@uw.edu" }]
+keywords = [
+    "change.org",
+    "petitions",
+    "comments",
+    "scraping",
+    "graphql",
+    "data-collection",
+    "social-movements",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Sociology",
+    "Typing :: Typed",
+]
+dependencies = [
+    "httpx>=0.27",
+    "pydantic>=2.7",
+    "pydantic-settings>=2.3",
+    "orjson>=3.10",
+    "polars>=1.0",
+    "click>=8.1",
+    "structlog>=24.1",
+    "tenacity>=8.4",
+    "lingua-language-detector>=2.0",
+]
+
+[project.scripts]
+petitioner = "petitioner.cli:cli"
+
+[project.urls]
+# TODO: replace OWNER with the real GitHub account before publishing.
+Homepage = "https://github.com/OWNER/petitioner"
+Repository = "https://github.com/OWNER/petitioner"
+Issues = "https://github.com/OWNER/petitioner/issues"
+
+[project.optional-dependencies]
+dev = ["pytest>=8.2", "mypy>=1.10", "ruff>=0.5"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/petitioner"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src/petitioner", "tests", "README.md", "LICENSE"]
+
+[tool.uv]
+package = true
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "UP", "B", "SIM"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["petitioner"]
+
+[tool.mypy]
+strict = true
+warn_return_any = true
+warn_unused_configs = true
+plugins = ["pydantic.mypy"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v"

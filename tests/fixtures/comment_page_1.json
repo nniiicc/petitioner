@@ -1,0 +1,17 @@
+{
+  "data": {
+    "petition": {
+      "id": "18514354",
+      "commentsConnection": {
+        "totalCount": 3,
+        "pageInfo": {"hasNextPage": true, "endCursor": "YXJyYXljb25uZWN0aW9uOjE="},
+        "nodes": [
+          {"id": "c1", "comment": "First reason", "role": "SUPPORTER_COMMENT", "likes": 5,
+           "createdAt": "2020-01-01T00:00:00Z", "user": {"id": "u1", "displayName": "A", "city": "Seattle"}},
+          {"id": "c2", "comment": "Second reason — café", "role": "SUPPORTER_COMMENT", "likes": 2,
+           "createdAt": "2020-01-02T00:00:00Z", "user": {"id": "u2", "displayName": "B", "city": null}}
+        ]
+      }
+    }
+  }
+}

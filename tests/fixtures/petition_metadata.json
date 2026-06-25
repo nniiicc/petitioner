@@ -1,0 +1,29 @@
+{
+  "data": {
+    "petition": {
+      "id": "18514354",
+      "slug": "example-petition",
+      "ask": "Get Amazon to Offer Plastic-Free Packaging Options",
+      "displayTitle": "Get Amazon to Offer Plastic-Free Packaging Options",
+      "description": "<p>The packaging waste is enormous.</p>",
+      "createdAt": "2019-10-20T18:12:19Z",
+      "publishedAt": "2019-10-20T18:13:19Z",
+      "status": "VICTORY",
+      "isVerifiedVictory": false,
+      "relevantLocationLocalizedName": null,
+      "user": {"id": "142451095", "displayName": "Nicole Delma"},
+      "organization": null,
+      "signatureState": {
+        "signatureCount": {"total": 562515, "displayed": 784352, "displayedLocalized": "784,352"},
+        "signatureGoal": {"displayed": 1000000}
+      },
+      "tagsConnection": {
+        "nodes": [
+          {"id": "7426", "name": "Environment", "slug": "environment-12"},
+          {"id": "8087", "name": "Amazon", "slug": "amazon-en-us"}
+        ]
+      },
+      "commentsConnection": {"totalCount": 3}
+    }
+  }
+}
