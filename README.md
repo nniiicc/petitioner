@@ -1,6 +1,4 @@
-# petitioner
-
-Collects Change.org petitions and their complete comment sets into a SQLite store with Parquet/CSV export. No login or API key required.
+\Collects Change.org petitions and their complete comment sets into a SQLite store with Parquet/CSV export. No login or API key required.
 
 ## Install
 
