@@ -68,6 +68,19 @@ CREATE TABLE IF NOT EXISTS petition_tag (
     tag_id TEXT NOT NULL REFERENCES tag(tag_id),
     PRIMARY KEY (petition_id, tag_id)
 );
+CREATE TABLE IF NOT EXISTS decision_maker (
+    decision_maker_id TEXT PRIMARY KEY,
+    display_name TEXT,
+    title TEXT,
+    type TEXT,
+    slug TEXT,
+    state TEXT
+);
+CREATE TABLE IF NOT EXISTS petition_decision_maker (
+    petition_id TEXT NOT NULL REFERENCES petition(petition_id),
+    decision_maker_id TEXT NOT NULL REFERENCES decision_maker(decision_maker_id),
+    PRIMARY KEY (petition_id, decision_maker_id)
+);
 CREATE TABLE IF NOT EXISTS observation (
     observation_id TEXT PRIMARY KEY,
     petition_id TEXT NOT NULL REFERENCES petition(petition_id),
@@ -85,6 +98,9 @@ CREATE TABLE IF NOT EXISTS comment_progress (
 );
 CREATE INDEX IF NOT EXISTS idx_comment_petition ON comment(petition_id);
 CREATE INDEX IF NOT EXISTS idx_obs_petition ON observation(petition_id, captured_at);
+CREATE INDEX IF NOT EXISTS idx_pdm_petition
+    ON petition_decision_maker(petition_id);
+CREATE INDEX IF NOT EXISTS idx_pdm_dm ON petition_decision_maker(decision_maker_id);
 """
 
 
@@ -212,6 +228,27 @@ class Store:
                 "INSERT OR IGNORE INTO petition_tag(petition_id, tag_id) VALUES (?,?)",
                 (p.petition_id, tag.tag_id),
             )
+        for dm in p.decision_makers:
+            self._conn.execute(
+                "INSERT INTO decision_maker(decision_maker_id, display_name, title, "
+                "type, slug, state) VALUES (?,?,?,?,?,?) "
+                "ON CONFLICT(decision_maker_id) DO UPDATE SET "
+                "display_name=excluded.display_name, title=excluded.title, "
+                "type=excluded.type, slug=excluded.slug, state=excluded.state",
+                (
+                    dm.decision_maker_id,
+                    dm.display_name,
+                    dm.title,
+                    dm.type,
+                    dm.slug,
+                    dm.state,
+                ),
+            )
+            self._conn.execute(
+                "INSERT OR IGNORE INTO petition_decision_maker("
+                "petition_id, decision_maker_id) VALUES (?,?)",
+                (p.petition_id, dm.decision_maker_id),
+            )
         self._conn.commit()
 
     def upsert_comments(self, comments: list[Comment]) -> None:
@@ -327,6 +364,14 @@ class Store:
         for name, sql in (
             ("petitions", "SELECT * FROM petition"),
             ("comments", "SELECT * FROM comment"),
+            (
+                "decision_makers",
+                "SELECT pdm.petition_id, dm.decision_maker_id, dm.display_name, "
+                "dm.title, dm.type, dm.slug, dm.state FROM petition_decision_maker pdm "
+                "JOIN decision_maker dm "
+                "ON dm.decision_maker_id = pdm.decision_maker_id "
+                "ORDER BY pdm.petition_id",
+            ),
         ):
             rows = [dict(r) for r in self._conn.execute(sql).fetchall()]
             df = pl.DataFrame(rows) if rows else pl.DataFrame()

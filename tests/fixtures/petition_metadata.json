@@ -23,6 +23,27 @@
           {"id": "8087", "name": "Amazon", "slug": "amazon-en-us"}
         ]
       },
+      "decisionMakersConnection": {
+        "totalCount": 2,
+        "nodes": [
+          {
+            "id": "10641976",
+            "displayName": "Courtney Neron",
+            "title": "Oregon House of Representatives - District 26",
+            "type": "POLITICIAN",
+            "slug": "courtney-neron-district-26",
+            "state": "OR"
+          },
+          {
+            "id": "2405356",
+            "displayName": "Amazon",
+            "title": null,
+            "type": "COMPANY",
+            "slug": "amazon",
+            "state": null
+          }
+        ]
+      },
       "commentsConnection": {"totalCount": 3}
     }
   }

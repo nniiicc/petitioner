@@ -17,7 +17,9 @@ from __future__ import annotations
 from typing import Any
 
 # Bump when any value in this module changes (recorded on every Run; spec 6.5).
-ADAPTER_VERSION = "changeorg-corgi-5.2153.0"
+# The base tracks the site client version; the ``+dmN`` suffix marks this module's own
+# schema revisions (dm1 = added decisionMakersConnection).
+ADAPTER_VERSION = "changeorg-corgi-5.2153.0+dm1"
 
 BASE_URL = "https://www.change.org"
 GRAPHQL_URL = f"{BASE_URL}/api-proxy/graphql"
@@ -69,6 +71,10 @@ query PetitionMetadata($s: String!) {
       signatureGoal { displayed }
     }
     tagsConnection { nodes { id name slug } }
+    decisionMakersConnection {
+      totalCount
+      nodes { id displayName title type slug state }
+    }
     commentsConnection(first: 1, sortBy: POPULAR, roles: [SUPPORTER_COMMENT]) {
       totalCount
     }
@@ -159,6 +165,7 @@ def parse_petition(payload: dict[str, Any]) -> dict[str, Any]:
     count = sig.get("signatureCount") or {}
     goal = sig.get("signatureGoal") or {}
     tags = (p.get("tagsConnection") or {}).get("nodes") or []
+    decision_makers = (p.get("decisionMakersConnection") or {}).get("nodes") or []
     return {
         "petition_id": _require(p, "id"),
         "slug": _require(p, "slug"),
@@ -180,6 +187,18 @@ def parse_petition(payload: dict[str, Any]) -> dict[str, Any]:
             {"tag_id": t["id"], "name": t.get("name"), "slug": t.get("slug")}
             for t in tags
             if t.get("id")
+        ],
+        "decision_makers": [
+            {
+                "decision_maker_id": d["id"],
+                "display_name": d.get("displayName"),
+                "title": d.get("title"),
+                "type": d.get("type"),
+                "slug": d.get("slug"),
+                "state": d.get("state"),
+            }
+            for d in decision_makers
+            if d.get("id")
         ],
     }
 

@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+
+# uv
+.uv/
+
+# Type/test/lint caches
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Secrets
+.env
+
+# Runtime output (default paths from config.py)
+petitioner.db
+petitioner.db-wal
+petitioner.db-shm
+raw_payloads/
+exports/
+manifests/
+
+# Collected data samples
+change_org_petitions.csv
+
+# OS cruft
+.DS_Store

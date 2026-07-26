@@ -27,6 +27,24 @@ def test_parse_petition_maps_all_fields(petition_payload):
         {"tag_id": "7426", "name": "Environment", "slug": "environment-12"},
         {"tag_id": "8087", "name": "Amazon", "slug": "amazon-en-us"},
     ]
+    assert fields["decision_makers"] == [
+        {
+            "decision_maker_id": "10641976",
+            "display_name": "Courtney Neron",
+            "title": "Oregon House of Representatives - District 26",
+            "type": "POLITICIAN",
+            "slug": "courtney-neron-district-26",
+            "state": "OR",
+        },
+        {
+            "decision_maker_id": "2405356",
+            "display_name": "Amazon",
+            "title": None,
+            "type": "COMPANY",
+            "slug": "amazon",
+            "state": None,
+        },
+    ]
 
 
 def test_parse_petition_missing_field_raises():

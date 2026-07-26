@@ -46,10 +46,10 @@ dependencies = [
 petitioner = "petitioner.cli:cli"
 
 [project.urls]
-# TODO: replace OWNER with the real GitHub account before publishing.
-Homepage = "https://github.com/OWNER/petitioner"
-Repository = "https://github.com/OWNER/petitioner"
-Issues = "https://github.com/OWNER/petitioner/issues"
+Homepage = "https://github.com/nniiicc/petitioner"
+Repository = "https://github.com/nniiicc/petitioner"
+Issues = "https://github.com/nniiicc/petitioner/issues"
+Changelog = "https://github.com/nniiicc/petitioner/blob/main/CHANGELOG.md"
 
 [project.optional-dependencies]
 dev = ["pytest>=8.2", "mypy>=1.10", "ruff>=0.5"]

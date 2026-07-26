@@ -15,6 +15,11 @@ def test_normalize_petition(petition_payload):
     assert petition.created_at == datetime(2019, 10, 20, 18, 12, 19, tzinfo=UTC)
     assert petition.comment_total == 3
     assert [t.tag_id for t in petition.tags] == ["7426", "8087"]
+    assert [d.display_name for d in petition.decision_makers] == [
+        "Courtney Neron",
+        "Amazon",
+    ]
+    assert petition.decision_makers[0].type == "POLITICIAN"
 
 
 def test_normalize_comment():

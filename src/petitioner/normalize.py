@@ -9,7 +9,7 @@ from __future__ import annotations
 from datetime import datetime
 from typing import Any
 
-from .models import Comment, Petition, Tag
+from .models import Comment, DecisionMaker, Petition, Tag
 
 
 def _ts(value: str | None) -> datetime | None:
@@ -46,6 +46,17 @@ def normalize_petition(fields: dict[str, Any], language: str | None) -> Petition
         tags=[
             Tag(tag_id=str(t["tag_id"]), name=t.get("name"), slug=t.get("slug"))
             for t in fields.get("tags", [])
+        ],
+        decision_makers=[
+            DecisionMaker(
+                decision_maker_id=str(d["decision_maker_id"]),
+                display_name=d.get("display_name"),
+                title=d.get("title"),
+                type=d.get("type"),
+                slug=d.get("slug"),
+                state=d.get("state"),
+            )
+            for d in fields.get("decision_makers", [])
         ],
     )
 

@@ -8,6 +8,7 @@ import polars as pl
 
 from petitioner.models import (
     Comment,
+    DecisionMaker,
     Observation,
     Petition,
     Run,
@@ -37,6 +38,16 @@ def _petition(sig: int, comment_total: int) -> Petition:
         comment_total=comment_total,
         language="en",
         tags=[Tag(tag_id="t1", name="Env", slug="env")],
+        decision_makers=[
+            DecisionMaker(
+                decision_maker_id="dm1",
+                display_name="Jane Politician",
+                title="State Senator",
+                type="POLITICIAN",
+                slug="jane-politician",
+                state="WA",
+            )
+        ],
     )
 
 
@@ -126,6 +137,12 @@ def test_export(tmp_path):
         "petitions.csv",
         "comments.parquet",
         "comments.csv",
+        "decision_makers.parquet",
+        "decision_makers.csv",
     }
     df = pl.read_parquet(tmp_path / "exports" / "comments.parquet")
     assert df.height == 1
+    dm = pl.read_parquet(tmp_path / "exports" / "decision_makers.parquet")
+    assert dm.height == 1
+    assert dm.row(0, named=True)["petition_id"] == "p1"
+    assert dm.row(0, named=True)["type"] == "POLITICIAN"

@@ -47,6 +47,7 @@ def test_petition_field_paths_resolve(tx):
         "status",
         "comment_total",
         "tags",
+        "decision_makers",
     ):
         assert key in fields
     assert fields["slug"] == PROBE_SLUG

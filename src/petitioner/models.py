@@ -27,6 +27,19 @@ class Tag(BaseModel):
     slug: str | None
 
 
+class DecisionMaker(BaseModel):
+    """A formal target the petition is addressed to (e.g. type ``POLITICIAN``)."""
+
+    model_config = ConfigDict(frozen=True)
+
+    decision_maker_id: str
+    display_name: str | None
+    title: str | None
+    type: str | None
+    slug: str | None
+    state: str | None
+
+
 class Comment(BaseModel):
     comment_id: str
     petition_id: str
@@ -57,6 +70,7 @@ class Petition(BaseModel):
     comment_total: int
     language: str | None
     tags: list[Tag] = []
+    decision_makers: list[DecisionMaker] = []
 
 
 class Observation(BaseModel):
