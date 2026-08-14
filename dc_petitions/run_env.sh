@@ -1,0 +1,4 @@
+export PETITIONER_DB_PATH=dc_petitions/petitioner.db
+export PETITIONER_RAW_PAYLOAD_DIR=dc_petitions/raw_payloads
+export PETITIONER_EXPORT_DIR=dc_petitions/exports
+export PETITIONER_MANIFEST_DIR=dc_petitions/manifests

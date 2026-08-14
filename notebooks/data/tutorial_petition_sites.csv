@@ -1,0 +1,932 @@
+petition_id,granularity,site_id,site_name,parent_operator,lifecycle_status
+491365030,county,398,"Aligned: Coshocton Campus (Coshocton County, OH)",Aligned,proposed
+491311904,county,,,,
+491011639,city,,,,
+490837564,county,941,"Google: Montgomery County Missouri (Montgomery County, MO)",Google,approved
+491035975,county,,,,
+490914649,city,,,,
+491410190,county,103,"CyrusOne: Douglasville (Douglas County, GA)",CyrusOne,cancelled
+491326694,city,19,"Apple: Mesa Data Center (Maricopa County, AZ)",Apple,under_construction
+491239113,city,,,,
+491396542,city,,,,
+490924321,city,,,,
+491057418,county,629,Bedington Campus,Penzance Management,proposed
+490990390,county,,,,
+490975147,city,,,,
+491377035,city,,,,
+490965834,city,,,,
+490919980,city,568,"Switch: Austin (Williamson County, TX)",Switch,under_construction
+491232659,city,,,,
+491051660,city,756,Everett Docklands Data Center (Restriction Ordinance),,proposed
+491334561,city,153,"Microsoft: Hoffman Estates Campus (Cook County, IL)",Microsoft,operational
+491306342,county,,,,
+491219278,city,553,"Meta: El Paso (El Paso County, TX)",Meta,under_construction
+491330734,county,,,,
+490664619,county,766,Mason County KY Hyperscale Data Center Campus,,approved
+491304197,city,,,,
+490960489,city,284,"Nebius: Independence AI Factory (Jackson County, MO)",Nebius,under_construction
+491187762,city,,,,
+491308271,county,,,,
+491161108,county,226,"AWS: Calvert Technology Center (Calvert County, MD)",AWS,proposed
+491229535,county,435,"Crane Data Centers: PDX-01 (Washington County, OR)",,under_construction
+491292551,city,453,"CoreWeave: Lancaster (Lancaster County, PA)",CoreWeave,under_construction
+491413631,city,,,,
+491090588,city,,,,
+491189738,city,,,,
+491194024,city,,,,
+491311826,county,,,,
+491303563,city,,,,
+491195459,city,,,,
+490895419,county,668,Project West (LaGrange Troup County),,proposed
+491419233,county,,,,
+491167946,city,,,,
+491301021,city,,,,
+491395595,county,,,,
+491245880,city,,,,
+491259652,city,,,,
+490867568,city,,,,
+491222322,city,,,,
+491119945,city,342,"Nebius: Dataone Vineland (Cumberland County, NJ)",Nebius,under_construction
+491317785,county,,,,
+491193951,county,912,Fort Meade Hyperscale Campus,Stonebridge,approved
+490589739,county,598,"CleanArc: VA1 Campus (Caroline County, VA)",CleanArc Data Centers,under_construction
+491226386,county,104,"DC BLOX: Atlanta East (Rockdale County, GA)",DC BLOX,under_construction
+491203640,county,,,,
+491311663,city,,,,
+491434929,county,,,,
+491193951,county,89,Fort Meade Data Center Campus,,approved
+491309532,county,231,"Atmosphere: Dickerson Data Center Campus (Montgomery County, MD)",Atmosphere Data Centers,proposed
+490842928,city,,,,
+491243282,city,,,,
+491112425,city,,,,
+491393422,city,,,,
+490534389,county,233,"Catellus Development: Quantum Frederick (Frederick County, MD)",Catellus Development,under_construction
+491156266,city,,,,
+491060128,county,902,Air Products Upper Macungie Data Center Campus,,cancelled
+490381655,city,441,"QTS: Hillsboro Campus Expansion (Washington County, OR)",QTS,operational
+490967841,city,,,,
+491342783,city,,,,
+490849448,county,609,"STACK: Stafford Technology Campus (Stafford County, VA)",STACK,proposed
+491015532,county,,,,
+491207078,county,747,"Hyperscale Data: Dowagiac Campus (Cass County, MI)",Hyperscale Data,operational
+491113367,county,,,,
+490839340,city,167,"Google: Fort Wayne Campus (Allen County, IN)",Google,operational
+491407379,city,324,"Skylar Capital: Townsite Solar 2 Data Center (Clark County, NV)",Skylar Capital Management,proposed
+490928816,city,,,,
+491366143,city,,,,
+491396949,city,,,,
+491058892,city,683,Project Ruby (Columbus GA Hyperscale Campus),,proposed
+491295806,city,281,"Lambda: AI Factory Kansas City (Platte County, MO)",Lambda,operational
+491145285,city,,,,
+490958717,city,516,"EPB: Quantum Center (Hamilton, TN)",EPB,operational
+491364060,city,,,,
+491344244,county,,,,
+491169735,city,687,"Engineered Land Solutions: Project Delta (Stokes County, NC)",,proposed
+491048480,city,,,,
+491377841,city,,,,
+491193029,county,,,,
+491390795,city,,,,
+490881259,county,,,,
+491436238,county,,,,
+490364083,county,109,Hampton Technology Park,,approved
+491326694,city,32,"NTT: Mesa Campus (Maricopa County, AZ)",NTT,proposed
+491307975,city,,,,
+490120187,city,,,,
+490948830,city,50,"AWS: Gilroy Campus (Santa Clara County, CA)",AWS,under_construction
+490254809,city,,,,
+491345386,city,,,,
+491364370,city,,,,
+490958321,city,,,,
+491341976,city,,,,
+491378527,city,,,,
+491362711,county,,,,
+490534389,county,227,"Aligned: IAD-06 (Frederick County, MD)",Aligned,under_construction
+491310687,city,,,,
+491203706,city,84,"Verdantas: White Clay Campus (New Castle County, DE)",,proposed
+490910439,city,147,"Edged: DeKalb Campus (DeKalb County, IL)",Edged,approved
+490757201,city,264,Monticello Tech Campus,,proposed
+490664619,county,682,Mason County KY Hyperscale Data Center Complex (Maysville Area),,under_construction
+490848054,city,,,,
+491170388,county,144,"CyrusOne: Waverly Campus (Sangamon County, IL)",CyrusOne,approved
+491062370,city,,,,
+491161521,city,,,,
+490761969,county,552,"MSB Global: Matrix Data Center Campus (Hopkins County, TX)",MSB Global Services,under_construction
+491211986,city,,,,
+491347658,city,,,,
+491318125,county,,,,
+490922915,city,,,,
+491232754,city,,,,
+491401360,city,,,,
+491120009,county,821,"Drox: Project Iron Spur (Forsyth County, NC)",,proposed
+491367565,city,,,,
+490623971,city,230,"Lerner Enterprises: Brightseat Tech Park (Prince George's County, MD)",Lerner Enterprises,approved
+491188582,city,,,,
+491133901,city,207,DOE Paducah AI Data Center,,proposed
+491166723,city,558,Primary Digital Infrastructure / New Era Energy & Digital - Texas Critical Data Centers (TCDC),Stream,proposed
+491316831,county,,,,
+491316371,county,89,Fort Meade Data Center Campus,,approved
+491366586,county,,,,
+491342602,city,,,,
+491383098,city,,,,
+490956861,city,,,,
+491410190,county,110,"Microsoft: Douglasville Campus (Douglas County, GA)",Microsoft,under_construction
+491029190,city,511,"Sequitor Edge: Rapid City Campus (Pennington County, SD)",Sequitor Edge,approved
+491307968,county,,,,
+491268673,city,,,,
+490709295,city,,,,
+491334506,city,929,"Beltline Energy: Luther Data Center (Logan County, OK)",Beltline Energy,proposed
+490946710,city,,,,
+491144301,county,,,,
+491168949,county,,,,
+491211102,city,,,,
+491066162,city,34,"Oracle: Phoenix Cloud Region (Maricopa County, AZ)",Oracle,operational
+490457608,city,,,,
+491265193,city,,,,
+491431382,county,,,,
+491204102,county,575,"Pronghorn Development: Antelope Data Campus (Iron County, UT)",,approved
+490534389,county,701,"Catellus Development: Quantum Frederick (Frederick County, MD)",Catellus Development,operational
+490266461,city,,,,
+490368484,city,583,"Meta: Eagle Mountain Campus (Utah County, UT)",Meta,
+491344171,city,,,,
+491434531,city,543,EdgeConneX Bastrop AUS02 Campus,EdgeConneX,under_construction
+37901908,county,604,"Iron Mountain: Henrico County (Henrico County, VA)",Iron Mountain,proposed
+491193798,county,89,Fort Meade Data Center Campus,,approved
+491335230,city,,,,
+491323128,county,617,"AWS: Wallula Gap Campus (Benton County, WA)",AWS,approved
+491228400,city,,,,
+491025012,city,,,,
+490843785,city,,,,
+490959854,city,,,,
+491332545,city,184,"Google: Palo Campus (Linn County, IA)",Google,proposed
+490977163,county,912,Fort Meade Hyperscale Campus,Stonebridge,approved
+491368971,city,,,,
+491042328,county,160,"T5: Chicago IV (Lake County, IL)",T5,under_construction
+490258332,county,103,"CyrusOne: Douglasville (Douglas County, GA)",CyrusOne,cancelled
+490759938,city,470,"Cornell Realty Management: Wildcat Ridge (Lackawanna County, PA)",Cornell Realty Management,proposed
+491407765,county,,,,
+491359194,city,383,"Atlas Power: Williston Campus (Williams County, ND)",Atlas Power,operational
+490678946,city,606,"Harrison Street: Powerhouse 95 Campus (Spotsylvania County, VA)",Harrison Street,under_construction
+490713289,county,644,"Oracle: Stargate Port Washington (Ozaukee County, WI)",Oracle,under_construction
+490664673,city,682,Mason County KY Hyperscale Data Center Complex (Maysville Area),,under_construction
+490664619,county,944,Mason County Technology Campus Fortune 100,,approved
+491179141,city,,,,
+490807516,city,,,,
+491013418,city,,,,
+491310720,county,,,,
+491200856,city,,,,
+491316371,county,912,Fort Meade Hyperscale Campus,Stonebridge,approved
+491140631,city,,,,
+491067631,city,34,"Oracle: Phoenix Cloud Region (Maricopa County, AZ)",Oracle,operational
+490784905,city,,,,
+491202869,city,8,"Nebius: BHM01 (Jefferson County, AL)",Nebius,under_construction
+491417886,city,,,,
+491329358,city,,,,
+491362991,city,,,,
+491248069,city,,,,
+490667038,city,,,,
+491328324,city,50,"AWS: Gilroy Campus (Santa Clara County, CA)",AWS,under_construction
+491162124,county,445,"AWS: Kline Township (Schuylkill County, PA)",AWS,proposed
+491216890,city,,,,
+491202727,county,,,,
+491055168,city,,,,
+490605661,city,433,"Aligned: Hillsboro Campus (Washington County, OR)",Aligned,proposed
+491072972,city,,,,
+491109672,city,,,,
+491327240,county,796,"AWS: Advance Phase LLC 500-acre Data Center Walla Walla (Walla Walla County, WA)",AWS,approved
+491316376,county,86,"Cielo Digital: Haines City Campus (Polk County, FL)",Cielo Digital Infrastructure,proposed
+490459214,city,,,,
+491281092,city,,,,
+490929379,city,148,"Equinix: Minooka Campus (Grundy County, IL)",Equinix,approved
+491384226,city,,,,
+491250340,county,,,,
+491173427,city,,,,
+491224394,city,,,,
+491162742,city,,,,
+491215351,city,,,,
+491298711,county,912,Fort Meade Hyperscale Campus,Stonebridge,approved
+490793704,city,37,"Takanock: Project Baccara (Maricopa County, AZ)",,approved
+491380897,county,,,,
+491093866,county,631,IRS Enterprise Computing Center (Martinsburg Computing Center),,operational
+491298207,city,,,,
+490646661,city,596,"AWS: Louisa County Campus (Louisa County, VA)",AWS,under_construction
+491366071,city,,,,
+491156245,county,378,"Siemens: Wendell Manufacturing Expansion (Wake County, NC)",Siemens,under_construction
+490801483,city,,,,
+491424175,county,,,,
+491227543,county,,,,
+490983814,city,679,"Beltline Energy: Meramec Valley Technology Park (Franklin County, MO)",Beltline Energy,cancelled
+491185606,city,,,,
+491213769,city,540,"DataBank: Red Oak Campus (Ellis County, TX)",DataBank,under_construction
+491310189,county,,,,
+491319318,county,,,,
+490914146,city,,,,
+490922661,county,85,Atlas Compute AI Data Center Campus (Fort Pierce),,proposed
+490192208,county,,,,
+491355669,city,,,,
+490381655,city,433,"Aligned: Hillsboro Campus (Washington County, OR)",Aligned,proposed
+491338330,city,723,"Oracle: Openai Stargate Wyoming New Campus (Laramie County, WY)",Oracle,proposed
+491193798,county,86,"Cielo Digital: Haines City Campus (Polk County, FL)",Cielo Digital Infrastructure,proposed
+491233691,county,,,,
+491229535,county,436,"Flexential: Hillsboro 6 (Washington County, OR)",Flexential,proposed
+491212716,city,,,,
+491323128,county,618,"Atlas Agro: Richland Campus (Benton County, WA)",Atlas Agro,proposed
+491322044,county,,,,
+491331236,city,,,,
+491257855,city,,,,
+491307082,city,,,,
+491299343,county,720,"Rushmark: Rockland Road Data Center (Warren County, VA)",Rushmark Properties,cancelled
+491213248,city,70,"Flexential: Parker (Douglas County, CO)",Flexential,under_construction
+491145589,city,,,,
+490746398,county,366,"Compass: Statesville (Iredell County, NC)",Compass,approved
+491354285,county,611,"TA Realty: Leesburg Campus (Loudoun County, VA)",,under_construction
+491428440,county,613,"BlackChamber: Tuscarora Crossing (Loudoun County, VA)",BlackChamber Group,approved
+491177797,county,830,"NorthPoint: Project Hazlenut (Luzerne County, PA)",,cancelled
+490368484,city,585,"QTS: Eagle Mountain II (Utah County, UT)",QTS,under_construction
+490771203,city,,,,
+491317952,city,,,,
+490793147,city,,,,
+491220891,city,541,"DataNovaX: Pioneer Park (Wichita County, TX)",DataNovaX,operational
+491289187,city,,,,
+491346661,county,650,Prometheus Hyperscale Evanston Campus (formerly Wyoming Hyperscale Aspen Mountain),Prometheus Hyperscale,under_construction
+490692250,county,740,"QTS: Prince William Digital Gateway Compass (Prince William County, VA)",QTS,proposed
+490835403,county,,,,
+490784046,city,,,,
+491052351,county,503,"QTS: York I Campus (York County, SC)",QTS,under_construction
+490855031,city,,,,
+491364559,city,,,,
+491335135,city,,,,
+490971232,county,,,,
+491334506,city,828,"Beltline Energy: Luther Data Center (Lincoln County, OK)",,proposed
+491248162,city,,,,
+490919980,city,562,"Skybox: Round Rock Data Center (Williamson County, TX)",Skybox Datacenters,approved
+491307676,city,,,,
+491058726,city,188,"Cologix: Norwalk Data Center Campus (Warren County, IA)",Cologix,operational
+491203987,city,,,,
+490745755,city,760,"DC BLOX: Richmond Virginia Two-building Campus Expansion (Richmond City, VA)",DC BLOX,proposed
+491327985,county,,,,
+491169735,city,376,Project Delta (Engineered Land Solutions),,proposed
+491016497,county,298,"Quantica Infrastructure: Big Sky Campus (Yellowstone County, MT)",Quantica Infrastructure,proposed
+491229535,county,439,"NTT: Hillsboro Expansion (Washington County, OR)",NTT,under_construction
+491239427,city,,,,
+491000287,city,586,Summit Ridge Data Center,DCPC,approved
+490869251,city,640,"Microsoft: Kenosha Campus (Kenosha County, WI)",Microsoft,proposed
+491309194,county,,,,
+490534389,county,707,"Frederick County CDI-OZ (Frederick County, MD)",,approved
+491311890,city,,,,
+491370921,city,76,"Digital Realty: Aphorio Carter Trumbull (Fairfield County, CT)",Digital Realty,operational
+491174455,county,912,Fort Meade Hyperscale Campus,Stonebridge,approved
+491189136,city,882,"Crusoe: Abilene Phase 2 (Taylor County, TX)",Crusoe,operational
+491064374,city,29,"Arizona Land Consulting: Hassayampa Ranch Campus (Maricopa County, AZ)",,approved
+490997842,city,,,,
+490961264,city,,,,
+491317534,county,,,,
+491326694,city,24,"EdgeCore: Elliot Road Technology Corridor (Maricopa County, AZ)",EdgeCore,operational
+491087964,county,464,"Aligned: Project Phoenix (Beaver County, PA)",Aligned,approved
+491364143,county,,,,
+490960489,city,932,"Nebius: Hyper-scale AI (Jackson County, MO)",Nebius,under_construction
+490940987,county,160,"T5: Chicago IV (Lake County, IL)",T5,under_construction
+491315772,city,,,,
+491012010,county,607,Pulaski County Data Center Project (New River Commerce Park),,proposed
+491156245,county,377,"Siemens: Raleigh Power Delivery Facility (Wake County, NC)",Siemens,operational
+491319138,county,,,,
+491337989,county,,,,
+491225169,city,,,,
+490605661,city,703,Hillsboro Oregon data center moratorium - statewide incentive ban,,proposed
+491331300,city,,,,
+490960489,city,793,"Nebius: Independence AI (Jackson County, MO)",Nebius,under_construction
+491229535,county,703,Hillsboro Oregon data center moratorium - statewide incentive ban,,proposed
+491343976,county,,,,
+491371588,county,,,,
+490894138,city,,,,
+491330591,city,239,Massachusetts Green High Performance Computing Center (MGHPCC),MGHPCC,operational
+491226150,city,461,Project Gravity,,proposed
+490605661,city,436,"Flexential: Hillsboro 6 (Washington County, OR)",Flexential,proposed
+490914099,city,655,"Trammell Crow: Forsyth Technology Campus (Monroe County, GA)",,approved
+491321895,city,,,,
+490976668,city,,,,
+490664619,county,204,Unknown,,approved
+490966685,county,679,"Beltline Energy: Meramec Valley Technology Park (Franklin County, MO)",Beltline Energy,cancelled
+491416699,county,516,"EPB: Quantum Center (Hamilton, TN)",EPB,operational
+491326694,city,26,"Google: Redhawk (Maricopa County, AZ)",Google,under_construction
+491192986,city,79,"Gray Wolf Data Centers: Bristol Technology Center (Hartford County, CT)",Gray Wolf Data Centers,approved
+491311846,city,,,,
+491338330,city,868,"Microsoft: Cheyenne Expansion (Laramie County, WY)",Microsoft,proposed
+491054088,city,,,,
+491332901,city,,,,
+491280003,city,,,,
+490918520,city,299,"Sabey: Butte Campus (Silver Bow County, MT)",Sabey,proposed
+491052543,county,161,"T5: Grayslake (Lake County, IL)",T5,proposed
+491151316,county,778,"AWS: Cedar Creek Land Acquisition (Bastrop County, TX)",AWS,proposed
+491342257,county,,,,
+491177797,county,906,"AWS: Salem Township Campus (Luzerne County, PA)",AWS,operational
+491042328,county,161,"T5: Grayslake (Lake County, IL)",T5,proposed
+490849448,county,614,"Vantage: VA4 (Stafford County, VA)",Vantage,proposed
+491095516,county,835,"Brookfield: Grimes County Powered Data Park (Grimes County, TX)",Brookfield,proposed
+491303396,city,,,,
+491363027,county,,,,
+491337269,city,,,,
+491140958,county,540,"DataBank: Red Oak Campus (Ellis County, TX)",DataBank,under_construction
+491340592,county,106,"DataBank: Lithia Springs Campus (Douglas County, GA)",DataBank,under_construction
+490852403,city,,,,
+490973997,city,,,,
+490932312,county,342,"Nebius: Dataone Vineland (Cumberland County, NJ)",Nebius,under_construction
+491316376,county,912,Fort Meade Hyperscale Campus,Stonebridge,approved
+490712832,city,368,"Energy Storage Solutions: Kingsboro Campus (Edgecombe County, NC)",Energy Storage Solutions,proposed
+490837667,city,553,"Meta: El Paso (El Paso County, TX)",Meta,under_construction
+491331304,city,,,,
+491058845,county,162,"AWS: Project Rainier (St. Joseph County, IN)",AWS,operational
+491382677,city,514,"BitDeer: AI Conversion (Knox County, TN)",BitDeer,proposed
+491194540,city,,,,
+491347326,county,226,"AWS: Calvert Technology Center (Calvert County, MD)",AWS,proposed
+491330447,city,,,,
+490664619,county,769,Maysville Anonymous Data Center Land Acquisition,,approved
+491326694,city,33,"NTT: Phoenix Campus (Maricopa County, AZ)",NTT,operational
+490966685,county,288,"Provident: Gateway Digital Campus (Franklin County, MO)",Provident Data Centers,proposed
+490858549,city,749,"LFF Industrial: Project Crossroads (Ogle County, IL)",,cancelled
+491325776,city,,,,
+490966655,city,291,Wildwood Ranch Data Park Joplin,,approved
+491328767,city,,,,
+491171688,city,,,,
+490674765,county,595,"AWS: Devlin Technology Park (Prince William County, VA)",AWS,proposed
+491225164,county,459,"PowerHouse Data Centers: Pennsylvania Digital I (Cumberland County, PA)",PowerHouse Data Centers,under_construction
+490863763,county,903,"Hood County Data Center Cluster (Fort Spunky / Project Panther / Comanche Circle, 8 projects)",,approved
+491361422,county,897,"Energy Storage Solutions: Fayetteville Campus (Cumberland County, NC)",,proposed
+491058845,county,176,"Western Hospitality Partners: South Bend Campus (St. Joseph County, IN)",Western Hospitality Partners,cancelled
+491317706,city,,,,
+490505114,city,,,,
+491190078,city,,,,
+491143863,city,,,,
+491157504,city,324,"Skylar Capital: Townsite Solar 2 Data Center (Clark County, NV)",Skylar Capital Management,proposed
+491205758,county,816,Triple Oak Power Finney County Data Center Campus,,approved
+491215066,county,,,,
+491377489,city,,,,
+491211737,county,745,"PNK Group: Wisconsin Rapids Campus (Wood County, WI)",PNK Group,proposed
+490793704,city,36,Project Baccara (Surprise),,approved
+491229535,county,724,"Hillsboro Enterprise Zone Data Centers (Washington County, OR)",,operational
+491403430,county,,,,
+491327987,city,,,,
+490968067,city,,,,
+490928925,city,,,,
+491066030,city,,,,
+490975879,city,,,,
+491140958,county,532,"Compass: Red Oak Campus Expansion (Ellis County, TX)",Compass,under_construction
+490968742,county,680,"Google: Scioto County (Scioto County, OH)",Google,approved
+491012998,county,237,"TPC Data Centers: Konterra 1 (Prince George's County, MD)",TPC Data Centers,proposed
+491430676,county,,,,
+490811470,city,,,,
+490847436,city,,,,
+491386977,city,,,,
+491035981,county,611,"TA Realty: Leesburg Campus (Loudoun County, VA)",,under_construction
+491310340,county,,,,
+491303882,county,,,,
+491354508,city,,,,
+491210173,city,,,,
+491217497,city,,,,
+491338330,city,647,"Microsoft: HR Ranch Road (Laramie County, WY)",Microsoft,proposed
+490671697,city,561,"Serverfarm: CTX Campus (Harris County, TX)",Serverfarm,under_construction
+490934794,city,,,,
+491252948,city,444,"AWS: Falls Township (Bucks County, PA)",AWS,under_construction
+491405104,city,,,,
+491343741,city,,,,
+490900414,city,429,"Beale: Project Clydesdale (Tulsa County, OK)",Beale,under_construction
+491431935,city,,,,
+490368484,city,581,"Google: Eagle Mountain (Utah County, UT)",Google,proposed
+491315218,city,,,,
+491188553,city,,,,
+491338269,county,626,Unknown,,proposed
+490820202,city,,,,
+491355739,county,,,,
+491415750,city,,,,
+490895443,city,668,Project West (LaGrange Troup County),,proposed
+491301863,county,,,,
+491038924,city,560,"Rowan Digital: Temple Campus (Bell County, TX)",Rowan Digital,under_construction
+490534389,county,234,"AWS: Quantum Frederick (Frederick County, MD)",AWS,under_construction
+490919774,city,246,"Metrobloks: Southfield Data Center (Oakland County, MI)",Metrobloks,approved
+490605661,city,439,"NTT: Hillsboro Expansion (Washington County, OR)",NTT,under_construction
+491370619,county,229,Baltimore County 150MW Data Center (Woodlawn),,proposed
+491221051,city,,,,
+490957457,county,503,"QTS: York I Campus (York County, SC)",QTS,under_construction
+491061024,city,293,"Atlas Power: Butte Campus (Silver Bow County, MT)",Atlas Power Group,operational
+490534389,county,709,"Frederick County: CDI-OZ (Frederick County, MD)",,approved
+491319645,city,,,,
+490805602,city,155,"Oppidan: Connect Chicago (DuPage County, IL)",Connect Data Centers,operational
+491197433,city,,,,
+490381655,city,703,Hillsboro Oregon data center moratorium - statewide incentive ban,,proposed
+490989747,county,109,Hampton Technology Park,,approved
+491336735,city,,,,
+491145500,city,774,"Eneus Energy: Harlingen RGV Campus (Cameron County, TX)",Eneus Energy,proposed
+491046174,county,,,,
+490859412,county,,,,
+491339306,county,,,,
+490982375,county,805,"Cloverleaf: Madison County (Madison County, IL)",Cloverleaf,proposed
+491140639,city,679,"Beltline Energy: Meramec Valley Technology Park (Franklin County, MO)",Beltline Energy,cancelled
+491344430,county,,,,
+490883925,county,,,,
+490712832,city,369,"Energy Storage Solutions: Kingsboro AI Campus (Edgecombe County, NC)",Energy Storage Solutions,approved
+491058845,county,768,New Carlisle third data center rezoning proposal,,cancelled
+491014046,city,,,,
+491212592,city,,,,
+491400025,city,41,"Tract: Buckeye Technology Park (Maricopa County, AZ)",Tract,approved
+491374867,city,,,,
+490945180,city,,,,
+491194495,city,,,,
+491354969,county,,,,
+491326821,city,,,,
+490764621,city,637,Janesville Hyperscale (former GM site),,cancelled
+491052543,county,160,"T5: Chicago IV (Lake County, IL)",T5,under_construction
+491064742,city,,,,
+491323010,city,,,,
+490912049,city,,,,
+491314244,city,,,,
+490889347,city,123,"Switch: Keep 2.0 Atlanta North (Bartow County, GA)",Switch,proposed
+491307344,city,,,,
+491193951,county,86,"Cielo Digital: Haines City Campus (Polk County, FL)",Cielo Digital Infrastructure,proposed
+490453444,city,,,,
+491177797,county,829,"QTS: Blackstone QTS Salem Township Campus (Luzerne County, PA)",QTS,approved
+491404735,city,,,,
+490957806,city,35,Pinal Energy Generation & Technology Campus,,approved
+490434506,city,,,,
+490364990,county,114,Project Sail,,approved
+491366602,city,,,,
+491225149,city,,,,
+491174455,county,86,"Cielo Digital: Haines City Campus (Polk County, FL)",Cielo Digital Infrastructure,proposed
+491348132,city,,,,
+491357363,county,,,,
+491166263,county,93,"NextNRG: Nassau County Campus (Nassau County, FL)",NextNRG,cancelled
+491319499,city,,,,
+490723267,city,267,"AVAIO: Digital Taurus (Rankin County, MS)",AVAIO,under_construction
+491156896,city,,,,
+491352922,county,,,,
+491137410,city,826,"Meta: Project Klondike (Miami County, OH)",Meta,under_construction
+491062855,county,,,,
+491382750,county,,,,
+490956245,city,,,,
+491358115,county,,,,
+491410190,county,106,"DataBank: Lithia Springs Campus (Douglas County, GA)",DataBank,under_construction
+491034019,county,836,"CyrusOne: Jack County Campus (Jack County, TX)",CyrusOne,proposed
+490847523,county,808,White County Data Center (Wolcott Area),,proposed
+491102712,county,814,"Google: Project Helium (Barber County, KS)",Google,proposed
+491043470,city,,,,
+491324281,city,,,,
+491332273,city,,,,
+491028263,city,,,,
+491038252,city,146,"Edged Energy: Aurora ORD Campus (Kane County, IL)",Edged,operational
+491400006,city,,,,
+490975543,city,,,,
+491345211,county,,,,
+490682168,city,,,,
+491360828,city,,,,
+491142276,city,,,,
+490833725,city,109,Hampton Technology Park,,approved
+490762510,city,34,"Oracle: Phoenix Cloud Region (Maricopa County, AZ)",Oracle,operational
+491140958,county,557,"PowerHouse: Grand Prairie Campus (Ellis County, TX)",PowerHouse Data Centers,under_construction
+491379536,city,344,"Connect Data Centers: Albuquerque Edge (Bernalillo County, NM)",Connect Data Centers,operational
+491337231,county,93,"NextNRG: Nassau County Campus (Nassau County, FL)",NextNRG,cancelled
+491012998,county,230,"Lerner Enterprises: Brightseat Tech Park (Prince George's County, MD)",Lerner Enterprises,approved
+491113617,city,264,Monticello Tech Campus,,proposed
+490382800,city,,,,
+491066124,city,622,Trammell Crow West Richland Campus,,proposed
+490849080,city,,,,
+490829282,city,206,TenKey LandCo Data Center,,approved
+491425528,city,,,,
+491341856,city,,,,
+491020906,city,,,,
+491205925,county,258,"Archer Datacenters: Faribault Campus (Rice County, MN)",Archer Datacenters,proposed
+491424080,city,,,,
+491238072,county,,,,
+491326795,city,,,,
+491187334,city,72,"Novva: Colorado Springs Data Center Expansion (El Paso County, CO)",Novva,operational
+491296191,city,791,"Star Innovation District (Will County, IL)",,cancelled
+491054503,city,,,,
+491015463,city,,,,
+491189136,city,564,"Oracle: Stargate Abilene (Taylor County, TX)",Oracle,operational
+491353519,county,161,"T5: Grayslake (Lake County, IL)",T5,proposed
+491156245,county,374,New Hill Digital Campus (Wake County),,cancelled
+490818132,city,151,"Hillwood: Joliet Technology Center (Will County, IL)",Hillwood,approved
+490953185,city,755,"RadiusDC: Indy I (Hendricks County, IN)",RadiusDC,approved
+490814004,city,,,,
+491340592,county,105,"DC BLOX: Atlanta West (Douglas County, GA)",DC BLOX,proposed
+491344867,city,,,,
+491203331,county,427,"Meta: Project Anthem (Tulsa County, OK)",Meta,under_construction
+491349737,county,157,"Prologis: Shelbyville Data Center Campus (Shelby County, IN)",Prologis,approved
+491437322,county,,,,
+491284544,city,,,,
+491309381,city,,,,
+491357266,city,,,,
+491018605,city,,,,
+490818932,county,464,"Aligned: Project Phoenix (Beaver County, PA)",Aligned,approved
+491426592,city,,,,
+491240941,city,307,"Sequitor Edge: Kearney (Buffalo County, NE)",,approved
+491174455,county,89,Fort Meade Data Center Campus,,approved
+491062781,city,,,,
+490993846,county,,,,
+490840679,county,808,White County Data Center (Wolcott Area),,proposed
+491403097,city,,,,
+491187334,city,75,"T5: Colorado Springs (El Paso County, CO)",T5,under_construction
+491241660,county,,,,
+491161073,county,226,"AWS: Calvert Technology Center (Calvert County, MD)",AWS,proposed
+491393609,city,,,,
+491184872,city,,,,
+490364083,county,107,"Equinix: Atlanta 262-Acre Expansion (Henry County, GA)",Equinix,proposed
+491310737,city,,,,
+490976570,city,,,,
+491229535,county,442,"Rowan Digital: Meriwether (Washington County, OR)",Rowan Digital,
+491305787,county,,,,
+490610240,city,707,"Frederick County CDI-OZ (Frederick County, MD)",,approved
+490890842,city,,,,
+490940987,county,161,"T5: Grayslake (Lake County, IL)",T5,proposed
+490091109,city,,,,
+490072274,city,,,,
+490869995,city,,,,
+490784395,city,227,"Aligned: IAD-06 (Frederick County, MD)",Aligned,under_construction
+491321324,county,,,,
+490722539,county,,,,
+490771538,city,,,,
+491061024,city,295,"Hyperscale Data: Sentinum Montana Facility (Silver Bow County, MT)",Hyperscale Data,operational
+491173463,county,,,,
+491215441,city,,,,
+491195269,county,335,"CoreWeave: Kenilworth (Union County, NJ)",CoreWeave,operational
+491290636,county,,,,
+491012088,city,50,"AWS: Gilroy Campus (Santa Clara County, CA)",AWS,under_construction
+491176184,county,,,,
+490429175,city,,,,
+491358260,city,,,,
+491219295,city,,,,
+490980986,county,276,CRG/Clayco Festus Campus,Google,approved
+491366444,city,,,,
+491302339,county,,,,
+491414378,county,,,,
+491345339,city,,,,
+491013974,city,,,,
+491238630,city,,,,
+490921574,county,431,"Beale: Project Mustang (Rogers County, OK)",Beale,proposed
+491363916,city,,,,
+491166723,city,570,Texas Critical Data Centers (Odessa),Stream,under_construction
+490646661,city,601,"EdgeCore: Louisa County Campus (Louisa County, VA)",EdgeCore,proposed
+491064374,city,41,"Tract: Buckeye Technology Park (Maricopa County, AZ)",Tract,approved
+491203331,county,424,"Google: Sand Springs (Tulsa County, OK)",Google,approved
+491424530,city,,,,
+491396355,city,,,,
+491323128,county,623,"Atlas Agro: Richland Data Center Campus (Benton County, WA)",Atlas Agro,approved
+491353135,county,810,"AWS: Hobart Data Center Campus (Lake County, IN)",AWS,approved
+491225356,city,,,,
+491424223,county,363,"TeraWulf: Lake Mariner Campus (Niagara County, NY)",TeraWulf,under_construction
+491353519,county,160,"T5: Chicago IV (Lake County, IL)",T5,under_construction
+491042263,city,57,"Imperial Data Center (Imperial County, CA)",,approved
+491378876,city,,,,
+491242061,county,,,,
+490258332,county,110,"Microsoft: Douglasville Campus (Douglas County, GA)",Microsoft,under_construction
+491044695,city,,,,
+491341688,county,,,,
+491025369,city,,,,
+491231100,city,,,,
+490795568,city,,,,
+491054758,city,,,,
+491291413,county,,,,
+491023047,city,,,,
+490381655,city,436,"Flexential: Hillsboro 6 (Washington County, OR)",Flexential,proposed
+491177797,county,446,"AWS: Salem Township (Luzerne County, PA)",AWS,proposed
+491328042,city,,,,
+491310647,city,567,"Stream: San Antonio III (Bexar County, TX)",Stream,under_construction
+491319799,county,,,,
+491316371,county,86,"Cielo Digital: Haines City Campus (Polk County, FL)",Cielo Digital Infrastructure,proposed
+491316359,county,89,Fort Meade Data Center Campus,,approved
+490759938,city,461,Project Gravity,,proposed
+491342149,city,,,,
+491249714,city,,,,
+491314675,city,,,,
+490669232,city,,,,
+491323627,city,,,,
+491299011,city,,,,
+491060959,city,8,"Nebius: BHM01 (Jefferson County, AL)",Nebius,under_construction
+491313983,county,,,,
+491366510,city,,,,
+491214837,county,,,,
+491403580,city,,,,
+491224328,county,,,,
+491384146,city,,,,
+491363642,county,687,"Engineered Land Solutions: Project Delta (Stokes County, NC)",,proposed
+491197487,county,,,,
+491348779,county,,,,
+491012204,city,,,,
+491299018,city,553,"Meta: El Paso (El Paso County, TX)",Meta,under_construction
+490818132,city,767,"Hillwood: Joliet Technology Center (Will County, IL)",PowerHouse Data Centers,approved
+491229535,county,722,"AWS: Hillsboro OR Data Center Moratorium and Opposition (Washington County, OR)",AWS,proposed
+491038252,city,143,"CyrusOne: Aurora Expansion (Kane County, IL)",CyrusOne,under_construction
+491323724,city,,,,
+491248759,county,373,"Microsoft: Person County Megasite (Person County, NC)",Microsoft,proposed
+491397339,county,,,,
+491225659,city,,,,
+491207078,county,245,"Hyperscale Data: Dowagiac AI Campus (Cass County, MI)",Hyperscale Data,operational
+491340248,city,349,Buffalo Data Center Construction Projects,,under_construction
+491312627,county,,,,
+490977163,county,89,Fort Meade Data Center Campus,,approved
+490107434,city,,,,
+490689878,city,,,,
+491413928,city,,,,
+491307314,city,,,,
+490180336,city,,,,
+491437234,county,,,,
+491216271,city,,,,
+491255117,city,,,,
+490922727,city,,,,
+490913091,city,,,,
+490652787,city,637,Janesville Hyperscale (former GM site),,cancelled
+491310098,county,,,,
+490953485,city,124,"T5: Atlanta IV (Fulton County, GA)",T5,operational
+490867448,city,,,,
+490690872,city,,,,
+490915852,county,95,Project Tango (Palm Beach County),,proposed
+491213769,city,532,"Compass: Red Oak Campus Expansion (Ellis County, TX)",Compass,under_construction
+491401881,city,,,,
+491315724,county,,,,
+490863763,county,527,"AWS: Project Spectrum (Hood County, TX)",AWS,approved
+491185698,county,,,,
+490787674,city,,,,
+491394501,city,,,,
+491093866,county,629,Bedington Campus,Penzance Management,proposed
+490658276,city,,,,
+491061024,city,299,"Sabey: Butte Campus (Silver Bow County, MT)",Sabey,proposed
+491312346,city,,,,
+491062537,county,,,,
+490663658,city,,,,
+490965082,city,,,,
+491236916,county,602,"Google: Botetourt County Data Center Campus (Botetourt County, VA)",Google,proposed
+491224557,city,,,,
+491345581,county,,,,
+491342649,city,,,,
+490829545,city,757,Conshohocken Steel Mill Data Center (Plymouth Township),,proposed
+491317600,city,,,,
+491362943,city,,,,
+490860892,city,,,,
+490121044,city,611,"TA Realty: Leesburg Campus (Loudoun County, VA)",,under_construction
+491396501,city,,,,
+490710832,city,,,,
+491200996,city,,,,
+491226101,county,57,"Imperial Data Center (Imperial County, CA)",,approved
+491177537,county,71,"Global AI: Windsor Campus (Weld County, CO)",Global AI,approved
+491057418,county,631,IRS Enterprise Computing Center (Martinsburg Computing Center),,operational
+490474844,city,813,"Google: Morgan County (Morgan County, IN)",Google,under_construction
+490368484,city,587,"Tract: Pole Canyon Tech Park (Utah County, UT)",Tract,proposed
+490258332,county,105,"DC BLOX: Atlanta West (Douglas County, GA)",DC BLOX,proposed
+491018045,county,844,Cassville Data Center (Anonymous Developer),,cancelled
+491417421,city,,,,
+491346668,city,,,,
+491279511,city,,,,
+490787620,city,,,,
+491340592,county,110,"Microsoft: Douglasville Campus (Douglas County, GA)",Microsoft,under_construction
+491328116,city,,,,
+490754555,city,,,,
+491334561,city,142,"Compass: Hoffman Estates (Cook County, IL)",Compass,operational
+490816822,county,803,Crooked Creek Technology Park (Jones County),,cancelled
+490017344,city,,,,
+491060128,county,447,Atlas Industrial (South Whitehall),,proposed
+491347275,city,,,,
+491244814,city,,,,
+490638197,city,677,"KDC: Project Comal (Williamson County, TX)",,approved
+490823019,city,,,,
+491402322,city,,,,
+491193798,county,912,Fort Meade Hyperscale Campus,Stonebridge,approved
+490959785,city,,,,
+491180607,county,820,"Genover: Dunkirk Generating Station (Chautauqua, NY)",Genover Corporation,proposed
+490750750,city,,,,
+491410614,county,,,,
+491191190,city,,,,
+491015712,city,,,,
+491376549,city,,,,
+490446039,city,,,,
+490638197,city,530,"Blueprint Data Centers: Taylor Campus (Williamson County, TX)",Blueprint Data Centers,under_construction
+491218081,county,226,"AWS: Calvert Technology Center (Calvert County, MD)",AWS,proposed
+491370816,city,,,,
+490643870,city,22,Davis-Monthan Air Force Base Data Center,,proposed
+491328332,city,,,,
+491057030,city,563,"Blue Owl: Skybox Datacenters Wichita Falls Campus (Wichita County, TX)",Blue Owl,operational
+491233944,county,71,"Global AI: Windsor Campus (Weld County, CO)",Global AI,approved
+491220891,city,563,"Blue Owl: Skybox Datacenters Wichita Falls Campus (Wichita County, TX)",Blue Owl,operational
+491400492,city,,,,
+490959532,city,,,,
+491018045,county,636,Cassville (Grant County) Data Center,,cancelled
+490965683,city,,,,
+490849448,county,686,Potomac Creek Data Center Campus (Stafford County VA),,proposed
+491057672,city,,,,
+490763086,city,,,,
+491358174,county,,,,
+491192892,county,,,,
+491288920,county,,,,
+491349675,city,,,,
+490968371,city,,,,
+491313977,city,,,,
+491213248,city,73,"Flexential: PCL Construction Denver (Douglas County, CO)",Flexential,under_construction
+491002952,city,,,,
+490910498,city,702,"Beale: Project Blue Marana Luckett Road Data Center Campus (Pima County, AZ)",Beale,approved
+490846390,city,,,,
+491221770,county,,,,
+490858529,city,,,,
+490910439,city,152,"Meta: Dekalb Data Center (DeKalb County, IL)",Meta,operational
+491229535,county,716,"Hillsboro Data Center Cluster (Washington County, OR)",,proposed
+491354285,county,613,"BlackChamber: Tuscarora Crossing (Loudoun County, VA)",BlackChamber Group,approved
+491061676,city,267,"AVAIO: Digital Taurus (Rankin County, MS)",AVAIO,under_construction
+491033316,city,,,,
+491316359,county,912,Fort Meade Hyperscale Campus,Stonebridge,approved
+491364226,city,,,,
+491014627,city,,,,
+490782838,city,813,"Google: Morgan County (Morgan County, IN)",Google,under_construction
+491298195,county,,,,
+490674765,county,740,"QTS: Prince William Digital Gateway Compass (Prince William County, VA)",QTS,proposed
+490977163,county,86,"Cielo Digital: Haines City Campus (Polk County, FL)",Cielo Digital Infrastructure,proposed
+491363642,county,376,Project Delta (Engineered Land Solutions),,proposed
+491326153,city,,,,
+490989747,county,107,"Equinix: Atlanta 262-Acre Expansion (Henry County, GA)",Equinix,proposed
+490600514,city,693,"Highlander SM One Data Center (Hays County, TX)",,cancelled
+491392649,county,,,,
+490574207,city,,,,
+491332862,city,,,,
+491229535,county,713,Hillsboro Data Center Moratorium Movement and Protests,,proposed
+490992053,city,,,,
+490605661,city,722,"AWS: Hillsboro OR Data Center Moratorium and Opposition (Washington County, OR)",AWS,proposed
+491080695,city,511,"Sequitor Edge: Rapid City Campus (Pennington County, SD)",Sequitor Edge,approved
+490883634,county,123,"Switch: Keep 2.0 Atlanta North (Bartow County, GA)",Switch,proposed
+491302186,city,,,,
+491328440,city,239,Massachusetts Green High Performance Computing Center (MGHPCC),MGHPCC,operational
+491431879,city,,,,
+491227632,county,,,,
+490381655,city,722,"AWS: Hillsboro OR Data Center Moratorium and Opposition (Washington County, OR)",AWS,proposed
+491410190,county,105,"DC BLOX: Atlanta West (Douglas County, GA)",DC BLOX,proposed
+491403902,city,,,,
+491321120,city,,,,
+491316376,county,89,Fort Meade Data Center Campus,,approved
+491340248,city,350,"ColoCrossing: BUF1 Expansion (Erie County, NY)",ColoCrossing,operational
+491213421,county,,,,
+491307785,county,636,Cassville (Grant County) Data Center,,cancelled
+490693498,city,754,"Karis Critical: Lucent Campus (DuPage County, IL)",Karis Critical,cancelled
+490258332,county,106,"DataBank: Lithia Springs Campus (Douglas County, GA)",DataBank,under_construction
+491359788,city,,,,
+490756578,county,,,,
+490785860,county,102,"Core Scientific: Dalton (Whitfield County, GA)",Core Scientific,proposed
+491298711,county,89,Fort Meade Data Center Campus,,approved
+490381655,city,439,"NTT: Hillsboro Expansion (Washington County, OR)",NTT,under_construction
+491367473,city,,,,
+491317293,county,,,,
+491434531,city,778,"AWS: Cedar Creek Land Acquisition (Bastrop County, TX)",AWS,proposed
+491238965,city,752,Calhoun GA Data Center Moratorium,,proposed
+491151411,county,,,,
+490784395,city,233,"Catellus Development: Quantum Frederick (Frederick County, MD)",Catellus Development,under_construction
+490655275,city,,,,
+491048205,city,,,,
+491060128,county,451,"Air Products: Cetronia Road Data Center (Lehigh, PA)",Air Products,cancelled
+490759938,city,462,Project Green,,approved
+490695477,city,,,,
+491241023,county,,,,
+491298711,county,86,"Cielo Digital: Haines City Campus (Polk County, FL)",Cielo Digital Infrastructure,proposed
+490825890,city,,,,
+491323128,county,622,Trammell Crow West Richland Campus,,proposed
+491151316,county,543,EdgeConneX Bastrop AUS02 Campus,EdgeConneX,under_construction
+491319475,county,613,"BlackChamber: Tuscarora Crossing (Loudoun County, VA)",BlackChamber Group,approved
+491226101,county,721,"Imperial Valley Data Center Campus (Imperial County, CA)",,proposed
+490954385,county,,,,
+490591680,county,604,"Iron Mountain: Henrico County (Henrico County, VA)",Iron Mountain,proposed
+491348944,city,,,,
+491166615,county,,,,
+491032597,city,,,,
+491295453,city,,,,
+490919674,city,,,,
+491247717,city,406,"LightHouse Data Centers: Hamilton Innovation Center (Butler County, OH)",LightHouse Data Centers,approved
+491057030,city,541,"DataNovaX: Pioneer Park (Wichita County, TX)",DataNovaX,operational
+491284423,city,,,,
+490831955,city,,,,
+490923000,city,,,,
+491036353,county,88,"Holder Industrial Park Data Center (Citrus County, FL)",,cancelled
+491008318,city,,,,
+491386134,city,,,,
+491349764,city,,,,
+490674765,county,599,Corscale Gainesville Crossing Campus,Corscale Data Centers,operational
+490813428,city,,,,
+491356472,county,,,,
+491346320,city,,,,
+491223896,city,,,,
+491012998,county,236,"Harrison Street: Sandy Farms (Prince George's County, MD)",Harrison Street,operational
+491416234,city,453,"CoreWeave: Lancaster (Lancaster County, PA)",CoreWeave,under_construction
+491321033,city,,,,
+491307785,county,844,Cassville Data Center (Anonymous Developer),,cancelled
+490704642,city,536,"CyrusOne: Bosque County Campus (Bosque County, TX)",CyrusOne,under_construction
+490605661,city,441,"QTS: Hillsboro Campus Expansion (Washington County, OR)",QTS,operational
+490522259,county,,,,
+491342313,county,,,,
+491373820,city,,,,
+490646001,city,,,,
+491221107,city,,,,
+491214173,city,,,,
+491406510,city,,,,
+490503617,county,205,"Western Hospitality Partners: Project Lincoln (Oldham County, KY)",,cancelled
+490852653,city,,,,
+491171860,city,,,,
+491327037,county,,,,
+491431180,city,,,,
+490825888,city,644,"Oracle: Stargate Port Washington (Ozaukee County, WI)",Oracle,under_construction
+490507868,county,644,"Oracle: Stargate Port Washington (Ozaukee County, WI)",Oracle,under_construction
+491307051,county,,,,
+491400725,city,,,,
+491428440,county,611,"TA Realty: Leesburg Campus (Loudoun County, VA)",,under_construction
+491326694,city,17,"AWS: Mesa Campus (Maricopa County, AZ)",AWS,approved
+491353313,city,,,,
+491306050,city,,,,
+491379877,county,,,,
+491315651,county,,,,
+491391347,city,,,,
+491133790,city,,,,
+490863763,county,911,"Sailfish: Comanche Circle (Hood County, TX)",Sailfish Investors,approved
+491165369,city,,,,
+491327020,city,,,,
+491297945,county,,,,
+490869374,city,,,,
+491190698,county,630,"Google: Buffalo Putnam County (Putnam County, WV)",Google,proposed
+491189136,city,664,"Microsoft: Crusoe Abilene Microsoft Campus (Taylor County, TX)",Microsoft,under_construction
+491181488,county,,,,
+490818132,city,150,"PowerHouse: Joliet Technology Center (Will County, IL)",PowerHouse Data Centers,approved
+491065458,county,,,,
+490937048,county,,,,
+491293194,city,,,,
+491373060,city,,,,
+490871970,city,424,"Google: Sand Springs (Tulsa County, OK)",Google,approved
+490692250,county,599,Corscale Gainesville Crossing Campus,Corscale Data Centers,operational
+491043597,city,,,,
+491349907,city,,,,
+491298130,city,,,,
+491359194,city,390,Project Fighting Pike (Williston),,under_construction
+490968898,county,805,"Cloverleaf: Madison County (Madison County, IL)",Cloverleaf,proposed
+491029572,city,,,,
+491370615,city,195,"Cloverleaf: Project Bluestem (Leavenworth County, KS)",Cloverleaf,proposed
+491321423,city,,,,
+491052328,city,,,,
+491411272,city,,,,
+490825666,city,467,Springdale DC (former Cheswick coal plant),,approved
+491237975,city,,,,
+491104613,city,,,,
+491226150,city,462,Project Green,,approved
+490957765,county,680,"Google: Scioto County (Scioto County, OH)",Google,approved
+491319475,county,611,"TA Realty: Leesburg Campus (Loudoun County, VA)",,under_construction
+491306402,city,,,,
+491400025,city,29,"Arizona Land Consulting: Hassayampa Ranch Campus (Maricopa County, AZ)",,approved
+491216109,county,379,"WhiteFiber: NC-1 (Rockingham County, NC)",Bit Digital,under_construction
+490821841,city,,,,
+491221655,city,,,,
+491416699,county,518,"Oracle: Jailhouse Studios (Hamilton County, TN)",Oracle,approved
+491226150,city,470,"Cornell Realty Management: Wildcat Ridge (Lackawanna County, PA)",Cornell Realty Management,proposed
+491309993,county,,,,
+491113681,city,,,,
+491295806,city,278,Edged Kansas City,Edged,operational
+491367600,city,,,,
+490922661,county,96,Sentinel Grove Technology Park (Fort Pierce),,cancelled
+491319599,city,,,,
+490953538,county,,,,
+491340592,county,103,"CyrusOne: Douglasville (Douglas County, GA)",CyrusOne,cancelled
+490891357,city,,,,
+491415879,city,,,,
+490783209,city,,,,
+490837564,county,275,"AWS: Project Green (Montgomery County, MO)",AWS,approved
+491295806,city,285,"Nebius: Independence Campus (Jackson County, MO)",Nebius,under_construction
+491094054,county,,,,
+491204473,city,,,,
+491295806,city,279,"Google: Project Shale (Jackson County, MO)",Google,under_construction
+491203331,county,429,"Beale: Project Clydesdale (Tulsa County, OK)",Beale,under_construction
+491353135,county,165,"CoreWeave: Hammond (Lake County, IN)",CoreWeave,approved
+491054381,city,,,,
+490773625,city,881,"Google: Project Skyway (Goodhue County, MN)",Google,approved
+491316359,county,86,"Cielo Digital: Haines City Campus (Polk County, FL)",Cielo Digital Infrastructure,proposed
+491035981,county,613,"BlackChamber: Tuscarora Crossing (Loudoun County, VA)",BlackChamber Group,approved
+491049046,county,,,,
+491389784,county,,,,
+491392763,county,,,,
+491229535,county,433,"Aligned: Hillsboro Campus (Washington County, OR)",Aligned,proposed
+491229535,county,441,"QTS: Hillsboro Campus Expansion (Washington County, OR)",QTS,operational
+491189620,city,,,,
+490773625,city,266,"Google: Project Skyway (Goodhue County, MN)",Google,approved
+490959622,city,,,,
+491204102,county,779,"Pronghorn Development: Antelope Data Campus (Iron County, UT)",,approved
+490918520,city,293,"Atlas Power: Butte Campus (Silver Bow County, MT)",Atlas Power Group,operational
+490692250,county,595,"AWS: Devlin Technology Park (Prince William County, VA)",AWS,proposed
+491257310,county,194,Osawatomie Data Center Campus,,proposed
+491297005,city,271,Clarksdale Data Center (Project Name Undisclosed),,proposed
+491393170,county,,,,
+491401682,county,117,"QTS: Blakely (Early County, GA)",QTS,proposed
+491179240,county,226,"AWS: Calvert Technology Center (Calvert County, MD)",AWS,proposed
+491382796,city,,,,
+491331574,city,,,,
+491289768,county,831,"Nadara: Gans Campus (Fayette, PA)",,proposed
+490839340,city,166,"Google: Project Zodiac Expansion (Allen County, IN)",Google,approved
+491323499,city,,,,
+491303038,city,,,,
+491064660,city,,,,
+491318208,city,,,,
+490918520,city,295,"Hyperscale Data: Sentinum Montana Facility (Silver Bow County, MT)",Hyperscale Data,operational
+490908362,city,805,"Cloverleaf: Madison County (Madison County, IL)",Cloverleaf,proposed
+490971580,city,,,,
+491336903,city,,,,
+491375637,city,,,,
+491064093,city,283,"Metrobloks: Liberty Campus (Clay County, MO)",Metrobloks,approved
+491358964,city,,,,
+491154585,county,,,,
+490867173,city,,,,
+491306566,county,,,,
+491372429,county,,,,
+490883634,county,115,Project Springbank,,cancelled
