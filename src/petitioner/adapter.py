@@ -18,8 +18,9 @@ from typing import Any
 
 # Bump when any value in this module changes (recorded on every Run; spec 6.5).
 # The base tracks the site client version; the ``+dmN`` suffix marks this module's own
-# schema revisions (dm1 = added decisionMakersConnection).
-ADAPTER_VERSION = "changeorg-corgi-5.2153.0+dm1"
+# schema revisions (dm1 = added decisionMakersConnection; dm2 = decision-maker
+# ``state`` renamed to ``stateCode`` upstream).
+ADAPTER_VERSION = "changeorg-corgi-5.2153.0+dm2"
 
 BASE_URL = "https://www.change.org"
 GRAPHQL_URL = f"{BASE_URL}/api-proxy/graphql"
@@ -73,7 +74,7 @@ query PetitionMetadata($s: String!) {
     tagsConnection { nodes { id name slug } }
     decisionMakersConnection {
       totalCount
-      nodes { id displayName title type slug state }
+      nodes { id displayName title type slug stateCode }
     }
     commentsConnection(first: 1, sortBy: POPULAR, roles: [SUPPORTER_COMMENT]) {
       totalCount
@@ -195,7 +196,7 @@ def parse_petition(payload: dict[str, Any]) -> dict[str, Any]:
                 "title": d.get("title"),
                 "type": d.get("type"),
                 "slug": d.get("slug"),
-                "state": d.get("state"),
+                "state": d.get("stateCode"),
             }
             for d in decision_makers
             if d.get("id")

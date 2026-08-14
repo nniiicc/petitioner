@@ -94,13 +94,7 @@ def discover_from_targets(targets: Iterable[str]) -> Iterator[str]:
 
 def dedupe(identifiers: Iterable[str]) -> list[str]:
     """De-duplicate identifiers, preserving first-seen order (FR-1.3)."""
-    seen: set[str] = set()
-    out: list[str] = []
-    for i in identifiers:
-        if i not in seen:
-            seen.add(i)
-            out.append(i)
-    return out
+    return list(dict.fromkeys(identifiers))
 
 
 @lru_cache(maxsize=1)
