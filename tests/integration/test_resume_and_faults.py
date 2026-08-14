@@ -109,13 +109,15 @@ def test_comment_raw_payload_retained(tmp_path):
     settings = _settings(tmp_path)
     with Store(settings.db_path, settings.raw_payload_dir) as store:
         Orchestrator(CommentBackend(), store, settings).run(["example"], "t")  # type: ignore[arg-type]
-    raw_files = list((tmp_path / "raw").glob("*.json"))
+    raw_files = list((tmp_path / "raw").glob("*.jsonl"))
     assert raw_files
-    payload = orjson.loads(raw_files[0].read_bytes())
-    assert "petition" in payload
+    lines = raw_files[0].read_bytes().splitlines()
+    # Line 1 is the petition payload; each later line is one raw comment page.
+    assert orjson.loads(lines[0])["data"]["petition"]
+    pages = [orjson.loads(line) for line in lines[1:]]
     # The comment pages must be retained so comment fields are re-derivable (FR-5.2).
-    assert payload["comments"], "comment raw pages were not retained"
-    assert payload["comments"][0]["data"]["petition"]["commentsConnection"]["nodes"]
+    assert pages, "comment raw pages were not retained"
+    assert pages[0]["data"]["petition"]["commentsConnection"]["nodes"]
 
 
 class _FaultyThenFine:

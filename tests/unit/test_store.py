@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from datetime import UTC, datetime
 
+import orjson
 import polars as pl
 
 from petitioner.models import (
@@ -146,3 +147,15 @@ def test_export(tmp_path):
     assert dm.height == 1
     assert dm.row(0, named=True)["petition_id"] == "p1"
     assert dm.row(0, named=True)["type"] == "POLITICIAN"
+
+
+def test_open_raw_payload_streams_json_lines(tmp_path):
+    with (
+        Store(tmp_path / "db.sqlite", tmp_path / "raw") as store,
+        store.open_raw_payload("p1", datetime.now(UTC)) as writer,
+    ):
+        writer.write({"a": 1})
+        writer.write({"b": 2})
+    assert writer.path.suffix == ".jsonl"
+    lines = writer.path.read_bytes().splitlines()
+    assert [orjson.loads(line) for line in lines] == [{"a": 1}, {"b": 2}]

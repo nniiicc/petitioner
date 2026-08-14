@@ -32,7 +32,7 @@
             "title": "Oregon House of Representatives - District 26",
             "type": "POLITICIAN",
             "slug": "courtney-neron-district-26",
-            "state": "OR"
+            "stateCode": "OR"
           },
           {
             "id": "2405356",
@@ -40,7 +40,7 @@
             "title": null,
             "type": "COMPANY",
             "slug": "amazon",
-            "state": null
+            "stateCode": null
           }
         ]
       },
