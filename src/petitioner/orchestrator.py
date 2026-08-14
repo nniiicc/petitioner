@@ -16,7 +16,6 @@ from typing import Any
 import structlog
 
 from . import adapter, client, comments, discovery, manifest, normalize
-from .comments import CommentBatch
 from .manifest import PetitionOutcome
 from .models import Observation, Run, RunStatus
 from .store import Store
@@ -150,36 +149,38 @@ class Orchestrator:
         pid = petition.petition_id
         self._store.upsert_petition(petition, run_id)
 
-        # 4. Walk comments, persisting each page + cursor as it arrives (FR-4.4 resume,
-        #    FR-5.2 raw). A fault after some pages leaves progress checkpointed.
+        # 4. Walk comments, streaming each page to disk and persisting comments +
+        #    cursor as it arrives (FR-4.4 resume, FR-5.2 raw). Memory stays bounded
+        #    regardless of comment count, and a fault after some pages leaves both
+        #    progress and raw pages checkpointed.
         stored_before = self._store.count_comments(pid)
         start_cursor, already_done = self._store.get_comment_progress(pid)
-        raw_pages: list[dict[str, Any]] = []
         reported_total = petition.comment_total
-
-        def on_batch(batch: CommentBatch) -> None:
-            models = [
-                normalize.normalize_comment(c, pid, run_id) for c in batch.comments
-            ]
-            self._store.upsert_comments(models)
-            self._store.set_comment_progress(
-                pid, batch.end_cursor, completed=not batch.has_next
-            )
-
+        captured_at = datetime.now(UTC)
         fault: Exception | None = None
-        try:
-            result = comments.collect_comments(
-                self._tx,
-                ident,
-                start_cursor=None if already_done else start_cursor,
-                on_batch=on_batch,
-            )
-            raw_pages = result.raw_pages
-            reported_total = result.reported_total or reported_total
-        except client.PetitionNotFoundError as exc:
-            fault = exc  # became unavailable mid-pull
-        except _PER_PETITION as exc:
-            fault = exc
+        with self._store.open_raw_payload(pid, captured_at) as raw_writer:
+            raw_writer.write(petition_raw)
+            try:
+                for batch in comments.iter_comment_pages(
+                    self._tx,
+                    ident,
+                    start_cursor=None if already_done else start_cursor,
+                ):
+                    raw_writer.write(batch.raw_payload)
+                    self._store.upsert_comments(
+                        [
+                            normalize.normalize_comment(c, pid, run_id)
+                            for c in batch.comments
+                        ]
+                    )
+                    self._store.set_comment_progress(
+                        pid, batch.end_cursor, completed=not batch.has_next
+                    )
+                    reported_total = batch.reported_total or reported_total
+            except client.PetitionNotFoundError as exc:
+                fault = exc  # became unavailable mid-pull
+            except _PER_PETITION as exc:
+                fault = exc
         if fault is not None:
             log.error("comment_pull_failed", identifier=ident, error=str(fault))
             metrics.parse_errors += 1
@@ -191,19 +192,15 @@ class Orchestrator:
             1.0 if reported_total <= 0 else min(1.0, stored_after / reported_total)
         )
 
-        # 6. Retain the full raw payload (petition + comment pages) and record the
-        #    Observation, even on a partial pull, so the run state is auditable.
-        captured_at = datetime.now(UTC)
-        raw_ref = self._store.save_raw_payload(
-            pid, captured_at, {"petition": petition_raw, "comments": raw_pages}
-        )
+        # 6. Record the Observation referencing the streamed raw capture, even on a
+        #    partial pull, so the run state is auditable.
         self._store.insert_observation(
             Observation(
                 observation_id=_new_id(),
                 petition_id=pid,
                 run_id=run_id,
                 captured_at=captured_at,
-                raw_payload_ref=raw_ref,
+                raw_payload_ref=str(raw_writer.path),
                 comment_completeness=completeness,
             ),
             petition.signatures_total,

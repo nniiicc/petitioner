@@ -108,6 +108,37 @@ def _iso(dt: datetime | None) -> str | None:
     return dt.isoformat() if dt else None
 
 
+class RawPayloadWriter:
+    """Streams raw payloads to a JSON-lines file, one payload per line.
+
+    Flushes on every write so an interrupted capture leaves a valid, diagnosable
+    prefix on disk (NFR-2). Use as a context manager.
+    """
+
+    def __init__(self, path: Path) -> None:
+        self.path = path
+        self._file = path.open("wb")
+
+    def write(self, payload: Any) -> None:
+        """Append one payload as a single JSON line and flush it to disk."""
+        self._file.write(orjson.dumps(payload) + b"\n")
+        self._file.flush()
+
+    def close(self) -> None:
+        self._file.close()
+
+    def __enter__(self) -> RawPayloadWriter:
+        return self
+
+    def __exit__(
+        self,
+        exc_type: type[BaseException] | None,
+        exc: BaseException | None,
+        tb: TracebackType | None,
+    ) -> None:
+        self.close()
+
+
 class Store:
     """SQLite-backed store. Use as a context manager."""
 
@@ -161,14 +192,27 @@ class Store:
         self._conn.commit()
 
     # -- raw payloads ------------------------------------------------------- #
+    def _raw_path(self, petition_id: str, captured_at: datetime, suffix: str) -> Path:
+        stamp = captured_at.strftime("%Y%m%dT%H%M%S%f")
+        return self._raw_dir / f"{petition_id}_{stamp}{suffix}"
+
     def save_raw_payload(
         self, petition_id: str, captured_at: datetime, payload: Any
     ) -> str:
-        """Write a raw payload to disk keyed by id + timestamp; return its ref."""
-        stamp = captured_at.strftime("%Y%m%dT%H%M%S%f")
-        path = self._raw_dir / f"{petition_id}_{stamp}.json"
+        """Write one raw payload to disk keyed by id + timestamp; return its ref."""
+        path = self._raw_path(petition_id, captured_at, ".json")
         path.write_bytes(orjson.dumps(payload))
         return str(path)
+
+    def open_raw_payload(
+        self, petition_id: str, captured_at: datetime
+    ) -> RawPayloadWriter:
+        """Open a streaming raw-payload capture (JSON lines); its path is the ref.
+
+        Line 1 is the petition payload; each subsequent line is one raw comment
+        page. Streaming keeps memory bounded regardless of comment count (NFR-2).
+        """
+        return RawPayloadWriter(self._raw_path(petition_id, captured_at, ".jsonl"))
 
     # -- upserts ------------------------------------------------------------ #
     def upsert_petition(self, p: Petition, run_id: str) -> None:
@@ -217,38 +261,32 @@ class Store:
                 run_id,
             ),
         )
-        for tag in p.tags:
-            self._conn.execute(
-                "INSERT INTO tag(tag_id, name, slug) VALUES (?,?,?) "
-                "ON CONFLICT(tag_id) DO UPDATE SET "
-                "name=excluded.name, slug=excluded.slug",
-                (tag.tag_id, tag.name, tag.slug),
-            )
-            self._conn.execute(
-                "INSERT OR IGNORE INTO petition_tag(petition_id, tag_id) VALUES (?,?)",
-                (p.petition_id, tag.tag_id),
-            )
-        for dm in p.decision_makers:
-            self._conn.execute(
-                "INSERT INTO decision_maker(decision_maker_id, display_name, title, "
-                "type, slug, state) VALUES (?,?,?,?,?,?) "
-                "ON CONFLICT(decision_maker_id) DO UPDATE SET "
-                "display_name=excluded.display_name, title=excluded.title, "
-                "type=excluded.type, slug=excluded.slug, state=excluded.state",
-                (
-                    dm.decision_maker_id,
-                    dm.display_name,
-                    dm.title,
-                    dm.type,
-                    dm.slug,
-                    dm.state,
-                ),
-            )
-            self._conn.execute(
-                "INSERT OR IGNORE INTO petition_decision_maker("
-                "petition_id, decision_maker_id) VALUES (?,?)",
-                (p.petition_id, dm.decision_maker_id),
-            )
+        self._conn.executemany(
+            "INSERT INTO tag(tag_id, name, slug) VALUES (?,?,?) "
+            "ON CONFLICT(tag_id) DO UPDATE SET "
+            "name=excluded.name, slug=excluded.slug",
+            [(t.tag_id, t.name, t.slug) for t in p.tags],
+        )
+        self._conn.executemany(
+            "INSERT OR IGNORE INTO petition_tag(petition_id, tag_id) VALUES (?,?)",
+            [(p.petition_id, t.tag_id) for t in p.tags],
+        )
+        self._conn.executemany(
+            "INSERT INTO decision_maker(decision_maker_id, display_name, title, "
+            "type, slug, state) VALUES (?,?,?,?,?,?) "
+            "ON CONFLICT(decision_maker_id) DO UPDATE SET "
+            "display_name=excluded.display_name, title=excluded.title, "
+            "type=excluded.type, slug=excluded.slug, state=excluded.state",
+            [
+                (d.decision_maker_id, d.display_name, d.title, d.type, d.slug, d.state)
+                for d in p.decision_makers
+            ],
+        )
+        self._conn.executemany(
+            "INSERT OR IGNORE INTO petition_decision_maker("
+            "petition_id, decision_maker_id) VALUES (?,?)",
+            [(p.petition_id, d.decision_maker_id) for d in p.decision_makers],
+        )
         self._conn.commit()
 
     def upsert_comments(self, comments: list[Comment]) -> None:
@@ -373,8 +411,7 @@ class Store:
                 "ORDER BY pdm.petition_id",
             ),
         ):
-            rows = [dict(r) for r in self._conn.execute(sql).fetchall()]
-            df = pl.DataFrame(rows) if rows else pl.DataFrame()
+            df = pl.read_database(sql, self._conn)
             if fmt in ("parquet", "both"):
                 path = export_dir / f"{name}.parquet"
                 df.write_parquet(path)

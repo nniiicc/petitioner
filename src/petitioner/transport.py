@@ -87,6 +87,14 @@ class Transport:
         )
         self._request_count = 0
         self._csrf_token: str | None = None
+        self._post_with_retry = retry(
+            retry=retry_if_exception_type(
+                (httpx.TransportError, httpx.HTTPStatusError)
+            ),
+            wait=wait_exponential(multiplier=settings.backoff_base_seconds),
+            stop=stop_after_attempt(settings.max_retries + 1),
+            reraise=True,
+        )(self._post_once)
         self._client = httpx.Client(
             timeout=settings.request_timeout_seconds,
             headers={
@@ -135,36 +143,27 @@ class Transport:
         log.debug("session_warmed", has_csrf=bool(self._csrf_token))
 
     # -- GraphQL ------------------------------------------------------------ #
+    def _post_once(self, body: dict[str, Any]) -> httpx.Response:
+        self._limiter.wait()
+        self._check_ceiling()
+        headers = {"content-type": "application/json"}
+        if self._csrf_token:
+            headers["x-csrf-token"] = self._csrf_token
+        op = body.get("operationName", "Q")
+        resp = self._client.post(
+            f"{adapter.GRAPHQL_URL}?op={op}",
+            content=orjson.dumps(body),
+            headers=headers,
+        )
+        if _is_bot_challenge(resp):
+            raise BotChallengeError("bot challenge on GraphQL request")
+        if resp.status_code >= 500 or resp.status_code == 429:
+            resp.raise_for_status()
+        return resp
+
     def post_graphql(self, body: dict[str, Any]) -> dict[str, Any]:
         """POST a GraphQL body and return parsed JSON. Retries transient failures."""
-
-        @retry(
-            retry=retry_if_exception_type(
-                (httpx.TransportError, httpx.HTTPStatusError)
-            ),
-            wait=wait_exponential(multiplier=self._settings.backoff_base_seconds),
-            stop=stop_after_attempt(self._settings.max_retries + 1),
-            reraise=True,
-        )
-        def _do() -> httpx.Response:
-            self._limiter.wait()
-            self._check_ceiling()
-            headers = {}
-            if self._csrf_token:
-                headers["x-csrf-token"] = self._csrf_token
-            op = body.get("operationName", "Q")
-            resp = self._client.post(
-                f"{adapter.GRAPHQL_URL}?op={op}",
-                content=orjson.dumps(body),
-                headers={**headers, "content-type": "application/json"},
-            )
-            if _is_bot_challenge(resp):
-                raise BotChallengeError("bot challenge on GraphQL request")
-            if resp.status_code >= 500 or resp.status_code == 429:
-                resp.raise_for_status()
-            return resp
-
-        resp = _do()
+        resp = self._post_with_retry(body)
         if resp.status_code == 400 and "invalid client" in resp.text.lower():
             raise InvalidClientError(resp.text[:200])
         try:
